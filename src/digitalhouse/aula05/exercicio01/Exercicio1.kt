@@ -1,4 +1,4 @@
-package digitalhouse.aula05
+package digitalhouse.aula05.exercicio01
 
 fun main(){
     val cliente1 = Cliente("Joao", "Felipe")

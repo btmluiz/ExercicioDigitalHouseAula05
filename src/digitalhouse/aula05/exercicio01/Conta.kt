@@ -1,4 +1,4 @@
-package digitalhouse.aula05
+package digitalhouse.aula05.exercicio01
 
 class Conta (
         var numeroDaConta: Int,
@@ -13,11 +13,14 @@ class Conta (
 
     fun saque(valor: Double){
         println("Transação: saque de R$$valor")
-        if (valor > saldo){
-            println("Saldo insuficiente")
-        } else {
-            saldo -= valor
-            println("Novo saldo: R$$saldo")
+        when {
+            valor > saldo -> {
+                println("Saldo insuficiente")
+            }
+            else -> {
+                saldo -= valor
+                println("Novo saldo: R$$saldo")
+            }
         }
     }
 }
